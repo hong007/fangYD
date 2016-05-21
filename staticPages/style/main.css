@@ -1,0 +1,182 @@
+html, body, .wrap, #container {
+    min-height: 100%;
+    width: 100%;
+    font-family: "微软雅黑";
+}
+body {
+    color: #333;
+    font: 12px/1.5 "微软雅黑", "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+}
+
+h1, h2, h3, h4, p {
+    font-family: "微软雅黑", arial, helvetica;
+    margin: 0;
+    padding: 0;
+}
+*{
+    margin: 0;
+    padding: 0
+}
+img {
+    -webkit-transition: all 0.7s ease-out;
+    -moz-transition: all 0.7s ease-out;
+    -o-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+    border:none;
+}
+ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #7a7a7a;
+}
+/*清除浏览器自带清楚叉叉*/
+::-ms-clear, ::-ms-reveal{
+    display: none;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    font-family: "微软雅黑"!important;
+    font-size: 14px;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    font-family: "微软雅黑"!important;
+    font-size: 14px;
+}              
+::-webkit-input-placeholder{
+    font-family: "微软雅黑"!important;
+    font-size: 14px;
+}
+:-ms-input-placeholder{
+    font-family: "微软雅黑"!important;
+    font-size: 14px;
+}
+.fr {
+    float: right;
+}
+.fl {
+    float: left;
+}
+.txtlf{
+    text-align: left;
+}
+.txtft{
+    text-align: right;
+}
+.txtct{
+    text-align: center;
+}
+.col_main{
+    color:#e03082;
+}
+
+
+/*清除浮动*/
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    visibility: hidden;
+    clear: both;
+}
+/*兼容IE*/
+.clearfix {
+    zoom: 1;
+}
+.wrapper,.header,.content{
+    width: 100%;
+}
+/*顶部title样式*/
+.header,.section{
+    width:1200px;
+    margin:0 auto;
+}.title{
+     height: 235px;
+ }
+ .picc_infor{
+     width:430xp;
+     display: inline-block;
+ }
+ .contact_infor{
+     display: inline-block;
+ }
+.section{
+    width: 1220px;
+    margin: 0 auto;
+}
+.logo_cont{
+    width:430px;
+}
+.ad_phone{
+    width:50px;
+    height:50px;
+    color:#fff;
+    background: #e03082;
+    font-size: 16px;
+}
+.ad_ph_num{
+    font-size: 16px;
+}
+/*底部样式*/
+.hWidth {margin: 0 auto;overflow: hidden;width: 1200px;}
+.footCon{ background:#323030; width:100%; }
+
+.footRight{ float:right; width:142px; border:#999 solid 1px; padding:10px; margin-top:15px;}
+
+.footRight p a{ color:#999; font-size:14px;}
+
+.footRight p .fWl{ margin-left:5px;}
+
+.fWT .fWr{ margin-left:18px;}
+
+.footItemL img{ float:left; width:72px;}
+
+.footLeft {float: left; margin-top:30px;width: 1030px;}
+
+.footItemL{ float:left; width:72px;}
+
+.footItemR{ float:left; margin-left:10px; width:948px;}
+
+.fIRT,.fIRB{ width:948px; overflow:hidden; margin-top:10px;}
+
+.fIRT li {float: left; width:158px; text-align:left;}
+
+.fIRT li a{ color:#999; font-size:14px;}
+
+.fIRB li {float: left; width:158px; text-align:left;}
+
+.fIRB li a{ color:#999; font-size:14px;}
+
+.footItem{ overflow:hidden;}
+
+.footSolid{ border-bottom:#5b5959 solid 1px; margin-top:20px;}
+
+.footBot{ overflow:hidden; margin-top:16px;}
+
+.footLogo {float: left;width: 274px;}
+
+.footIso{ float:left; margin-left:50px; width:175px;}
+
+.footTel{ background:url(../images/h29.png) no-repeat;  width:240px; height:50px; float:left; margin-left:50px;}
+
+.footTel a{ float:left; margin-left:58px; color:#999;font-size:14px;}
+
+.fIL {float: left; width:50px;}
+
+.fIR{ float:right;}
+
+.fIR p{ color:#999999; font-size:14px; margin-top:2.5px; text-transform:uppercase;}
+
+.footDoc{ float:left; margin-left:50px; width:135px;}
+
+.footGrant{ text-align:center; margin-top:15px; color:#666; font-size:12px;text-transform:uppercase}
+.footGrant a{ color:#323030;}
+.footGrant1{text-align:center; margin-top:15px; color:#666; font-size:12px;text-transform:uppercase;width:220px;margin:0 auto;}
+.footGrant1 a{ color:#666;background:url(../images/0.png) left no-repeat; display:block;padding-left:32%;background-size:30%;height:70px;line-height:70px;}
+
+.ico{ background:url(../images/cbg.png) no-repeat; width:257px; height:369px;}
+.iso{ width:50px; height:50px;display:block; background-position:-52px -317px;}
+.xm{ width:72px; height:67px; display:block; background-position:-63px -210px;}
