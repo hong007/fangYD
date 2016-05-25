@@ -12,46 +12,55 @@
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/main.css">
     <script src="js/jquery.min.js"></script>
+
+    <script type="text/javascript" src="plugin/SuperSlide/jquery.SuperSlide.2.1.1.js"></script>
 </head>
 <body>
     <div class="wrapper" id="wrapper">
         <div class="header" id="header">
-            <div class="title">
-                <div class="logo_cont">
-                    <img class="logo_imgc fl" src="../images/logo.png">
-                </div>
-                <div class="picc">
-                    <div class="picc_logo">
-                        <img src="../images/picc-logo.png">
+            <div class="title_cont clearfix">
+                <div class="title clearfix">
+                    <div class="logo_cont fl">
+                        <img class="logo_imgc fl" src="images/logo.png">
                     </div>
-                    <div class="picc_infor">
-                        <h2>所有产品均有中国人民财产保险公司责任承担</h2>
-                        <h2>
-                            保单号：
-                            <span>PZA1201533010000000073</span>
-                        </h2>
-                        <h2>
-                            保单号最高可获赔
-                            <span>200</span>
-                            万人民币
-                        </h2>
-                    </div>
-                    <div class="contact_infor fr">
-                        <h2 class="col_main xtc">权威技术&nbsp;&nbsp;签约治疗&nbsp;&nbsp;无效退款</h2>
-                        <div class="contact_phone">
-                            <p class="ad_ph_text">咨询电话</p>
-                            <h2 class="ad_ph_num">4008-265-960</h2>
-                            <h2 class="ad_ph_num">0571-86980926</h2>
+                    <div class="picc fl clearfix">
+                        <div class="picc_logo fl">
+                            <img src="images/picc-logo.png">
                         </div>
-                        <div class="code">
-                            <img src="../images/code-img.png">
+                        <div class="picc_infor">
+                            <h2>所有产品均有中国人民财产保险公司责任承担</h2>
+
+                            <h2>
+                                保单号：
+                                <span>PZA1201533010000000073</span>
+                            </h2>
+
+                            <h2>
+                                保单号最高可获赔
+                                <span>200</span>
+                                万人民币
+                            </h2>
+                        </div>
+                        <div class="contact_infor fr">
+                            <h2 class="contact_infor_title col_main xtc">权威技术&nbsp;&nbsp;签约治疗&nbsp;&nbsp;无效退款</h2>
+
+                            <div class="contact_phone">
+                                <p class="ad_ph_text fl">咨询电话</p>
+
+                                <h2 class="ad_ph_num">4008-265-960</h2>
+
+                                <h2 class="ad_ph_num">0571-86980926</h2>
+                            </div>
+                            <div class="picc_code">
+                                <img src="images/picc-code.jpg">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <ul class="menu">
-                <li>
-                    <a href="" class="active">首页</a>
+            <ul class="menu clearfix">
+                <li class="active">
+                    <a href="">首页</a>
                 </li>
                 <li>
                     <a href="">关于芳缘多</a>
@@ -74,39 +83,81 @@
                 <li>
                     <a href="">免费祛斑</a>
                 </li>
-                <li>
+                <li class="code_li">
                     <a href="">
-                        <span>官方微信</span>
-                        <span>免费诊断&nbsp;&nbsp;产品试用&nbsp;&nbsp;预约治疗</span>
+                        <span>官方微信</span><br />
+                        <span>免费诊断&nbsp;产品试用&nbsp;预约治疗</span>
                     </a>
                 </li>
             </ul>
         </div>
         <div class="content" id="content">
             <section class="section section1 investment">
-                <div class="carousel" id="carousel"></div>
+                <div class="carousel" id="carousel">
+                    <div id="slideBox" class="slideBox1">
+                        <div class="hd">
+                            <ul class="sb_nav">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="bd">
+                            <ul>
+                                <li>
+                                    <!-- <a href="images/banner1.jpg" target="_blank"> -->
+                                    <a href="javascript:void(0);">
+                                        <img src="images/banner1.jpg" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <!-- <a href="images/banner2.jpg" target="_blank"> -->
+                                    <a href="javascript:void(0);">
+                                        <img src="images/banner2.jpg" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <!-- <a href="images/banner3.jpg" target="_blank"> -->
+                                    <a href="javascript:void(0);">
+                                        <img src="images/banner3.jpg" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+                        <!-- <a class="prev" href="javascript:void(0)"></a>
+                        <a class="next" href="javascript:void(0)"></a> -->
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    jQuery(".slideBox1").slide({ mainCell: ".bd ul", autoPlay: true });
+                </script>
             </section>
-            <section class="section section2 investment">
+            <section class="section section2 investment clearfix">
                 <div class="sect_title">
                     <p>
-                        <span>投资专区</span>
-                        <span>Investment</span>
+                        <span class="txt_cn col_main">投资专区</span>
+                        <span class="txt_en">Investment</span>
                         <a href="" class="advisory">免费咨询服务</a>
                     </p>
                 </div>
                 <div class="sect_cont">
-                    <div class="inv">
+                    <div class="inv fl clearfix">
                         <div class="inv_proposal">
-                            <h2 class="bl_title">
-                                <span></span>
-                                <span>祛斑加盟方案</span>
-                                <a href="">MORE</a>
-                            </h2>
-                            <table>
+                            <table class="inv_table">
                                 <thead>
                                     <tr>
-                                        <th colspan="2">
-                                            <span></span>
+                                        <th colspan="4">
+                                            <h2 class="bl_title">
+                                                <span class="crl_sp"></span>
+                                                <span>祛斑加盟方案</span>
+                                                <a href="">MORE</a>
+                                            </h2>
+                                        </th>
+                                    </tr>
+                                    <tr style="height:40px;">
+                                        <th>
+                                            <span class="icon icon-logo"></span>
                                         </th>
                                         <th>三星代理</th>
                                         <th>四星代理</th>
@@ -195,131 +246,138 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="inv_study">
+                        <div class="inv_study bdf4 fr">
                             <h2 class="bl_title">
-                                <span></span>
+                                <span class="crl_sp"></span>
                                 <span>祛斑加盟方案</span>
                                 <a href="">MORE</a>
                             </h2>
-                            <div class="">
-                                <img src="../images/">
+
+                            <div class="sect_join">
+                                <img src="images/sect1-1.jpg">
                             </div>
-                            <div class="layer">
-                                <p>价值上万的技术培训，芳缘多祛斑高级讲师将分期、分批次对加盟商进行售前与售后的培训</p>
-                                <p>
+                            <div class="sect_join_layer">
+                                <p>价值上万的技术培训，芳缘多祛斑高级讲师将分期、分批次对加盟商进行售前与售后的培训。</p>
+                                <p class="btn_group txtlt">
                                     <button type="button">获取资料</button>
-                                    <button type="button">培训咨询</button>
+                                    <button class="fr" type="button">培训咨询</button>
                                 </p>
                             </div>
                         </div>
                         <div class="inv_case">
                             <div class="case_area">
                                 <p>十八年美容品牌经验</p>
-                                <img src="../images/img01.png">
+                                <img src="images/sect5-1.jpg">
                             </div>
                             <div class="case_area">
                                 <p>十八年美容品牌经验</p>
-                                <img src="../images/img01.png">
+                                <img src="images/sect5-1.jpg">
                             </div>
                             <div class="case_area">
                                 <p>十八年美容品牌经验</p>
-                                <img src="../images/img01.png">
+                                <img src="images/sect5-1.jpg">
                             </div>
                             <div class="case_area">
                                 <p>十八年美容品牌经验</p>
-                                <img src="../images/img01.png">
+                                <img src="images/sect5-1.jpg">
                             </div>
                         </div>
                     </div>
-                    <div class="inv_pro">
-                        <h2 class="bl_title">
-                            <span></span>
-                            <span>祛斑加盟方案</span>
-                            <a href="">MORE</a>
-                        </h2>
-                        <div class="inv_bl">
-                            <img src="">
-                            <h3>少女遭遇痘疤袭击</h3>
-                            <p>今年刚刚20岁，花一样的大好年华，可不知道什么时候痘痘悄悄地爬到了脸上，本以为，过了一这段时期就会消失...</p>
+                    <div class="pro bdf4 fr clearfix">
+                        <div class="inv_pro bdf4">
+                            <h2 class="bl_title">
+                                <span class="crl_sp"></span>
+                                <span>祛斑加盟方案</span>
+                                <a href="">MORE</a>
+                            </h2>
+
+                            <div class="inv_bl">
+                                <img src="images/sect1-1.jpg">
+                                <div class="inv_bl_cont">
+                                    <h3>少女遭遇痘疤袭击</h3>
+
+                                    <p>今年刚刚20岁，花一样的大好年华，可不知道什么时候痘痘悄悄地爬到了脸上，本以为，过了一这段时期就会消失...</p>
+                                </div>
+                            </div>
+                            <ul class="inv_bl_menu">
+                                <li>
+                                    <a href="">
+                                        小伙为爱战"痘"&nbsp;
+                                        <span>2016-05-12</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        小伙为爱战"痘"&nbsp;
+                                        <span>2016-05-12</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        小伙为爱战"痘"&nbsp;
+                                        <span>2016-05-12</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        小伙为爱战"痘"&nbsp;
+                                        <span>2016-05-12</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                        <ul>
-                            <li>
-                                <a href="">
-                                    小伙为爱战"痘"&nbsp;
-                                    <span>2016-05-12</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    小伙为爱战"痘"&nbsp;
-                                    <span>2016-05-12</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    小伙为爱战"痘"&nbsp;
-                                    <span>2016-05-12</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    小伙为爱战"痘"&nbsp;
-                                    <span>2016-05-12</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="inv_pro">
-                        <h2 class="bl_title">
-                            <span></span>
-                            <span>祛斑加盟方案</span>
-                            <a href="">MORE</a>
-                        </h2>
-                        <ul>
-                            <li>
-                                <a href="">
-                                    小伙为爱战"痘"&nbsp;
-                                    <span>2016-05-12</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    小伙为爱战"痘"&nbsp;
-                                    <span>2016-05-12</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    小伙为爱战"痘"&nbsp;
-                                    <span>2016-05-12</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    小伙为爱战"痘"&nbsp;
-                                    <span>2016-05-12</span>
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="inv_pro bdf4">
+                            <h2 class="bl_title">
+                                <span class="crl_sp"></span>
+                                <span>祛斑加盟方案</span>
+                                <a href="">MORE</a>
+                            </h2>
+                            <ul class="inv_bl_menu">
+                                <li>
+                                    <a href="">
+                                        小伙为爱战"痘"&nbsp;
+                                        <span>2016-05-12</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        小伙为爱战"痘"&nbsp;
+                                        <span>2016-05-12</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        小伙为爱战"痘"&nbsp;
+                                        <span>2016-05-12</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        小伙为爱战"痘"&nbsp;
+                                        <span>2016-05-12</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
-            <section class="section section3 joinstyle">
+            <section class="section section3 joinstyle clearfix">
                 <div class="sect_title">
                     <p>
-                        <span>加盟风采</span>
-                        <span>Join in style</span>
+                        <span class="txt_cn col_main">加盟风采</span>
+                        <span class="txt_en">Join in style</span>
                         <a href="" class="advisory">免费咨询服务</a>
                     </p>
                 </div>
                 <div class="sect_cont">
-                    <div class="inv_pro">
+                    <div class="inv_pro bdf4 fl">
                         <h2 class="bl_title">
-                            <span></span>
+                            <span class="crl_sp"></span>
                             <span>加盟案例</span>
                             <a href="">MORE</a>
                         </h2>
-                        <ul>
+                        <ul class="sct3_mn">
                             <li>
                                 <a href="">重庆加盟商盈利情况</a>
                             </li>
@@ -337,27 +395,253 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="sub_carousel"></div>
+                    <div class="sub_carousel fr">
+                        <div class="content4right fr">
+                            <div class="jmszs">
+                                <a class="prev content4fx" href="javascript:void(0)"></a> <a class="next content4fx" href="javascript:void(0)"></a>
+                                <div class="bd">
+                                    <ul style="position: relative; width: 750px; height: 280px;">
+                                        <li style="position: absolute; width: 750px; left: 0px; top: 0px; display: none;">
+                                            <!-- <h2>福州代理：黄海燕</h2> -->
+                                            <div class="jmszshhy">
+                                                <div class="jmszstop">
+                                                    <div class="jmszsleft fl"><img src="images/sect5-1.jpg" width="307" height="167"></div>
+                                                    <div class="jmszsright fr">
+                                                        <dl>
+                                                            <dd><span>加盟级别</span>：市级代理</dd>
+                                                            <dd><span>加盟店所在地</span>：江苏</dd>
+                                                            <dd><span>开业时间</span>：2010</dd>
+                                                            <dd><span>年盈利</span>：300万</dd>
+                                                            <dd><span>印象标签</span>：<strong class="jmszsjs jmszsstr">技术好</strong><strong class="jmszszy jmszsstr">专业</strong><strong class="jmszshfl jmszsstr">好盈利</strong></dd>
+                                                        </dl>
+                                                    </div>
+                                                </div>
+                                                <div class="jmszsbottom">
+                                                    <h3>入选感言：</h3>
+                                                    <p>我对英涛可以说是"一见钟情"。在今年5月份从网上了解了英涛，在这之前我就已经知道英涛品牌。在福建省，英涛有着很大的知名度，福建省多个城市已有英涛的代理和加盟商，她们都做得非常棒，所以我自己也很想做英涛代理。于是在今年的6月，我和我的一位朋友一起来到南京英涛总部考察，同时还考察了英涛特色项目、独家研发的产品、真人祛斑过程等，对此感到非常满意与 欣喜，当即与英涛签约，成为福州市代理。并在英涛总部接受了一个星期的专业技术培训。我坚信，加盟英涛会给我创造更多的财富!</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li style="position: absolute; width: 750px; left: 0px; top: 0px; display: none;">
+                                            <!-- <h2>宁夏总代理：柳立春</h2> -->
+                                            <div class="jmszshhy">
+                                                <div class="jmszstop">
+                                                    <div class="jmszsleft fl"><img src="images/sect5-1.jpg" width="307" height="167"></div>
+                                                    <div class="jmszsright fr">
+                                                        <dl>
+                                                            <dd><span>加盟级别</span>：宁夏总代理</dd>
+                                                            <dd><span>加盟店所在地</span>：江苏</dd>
+                                                            <dd><span>开业时间</span>：2010</dd>
+                                                            <dd><span>年盈利</span>：</dd>
+                                                            <dd><span>印象标签</span>：<strong class="jmszsjs jmszsstr">技术好</strong><strong class="jmszszy jmszsstr">专业</strong><strong class="jmszshfl jmszsstr">好盈利</strong></dd>
+                                                        </dl>
+                                                    </div>
+                                                </div>
+                                                <div class="jmszsbottom">
+                                                    <h3>入选感言：</h3>
+                                                    <p>虽然有着丰富的美容业经验，但是没有好的美容项目也是枉然。我是开私立医院的，医院里设有美容科，但是原先的美容项目，顾客反映效果不佳。后来遇到英涛，我果断取消医院原有的美容项目而加盟英涛祛斑，同时拿下宁夏总代理权。短短的两个月时间，英涛的色素提取祛斑技术，就让我的医院美容科营业额不断上升，非常庆幸选择了英涛。</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li style="position: absolute; width: 750px; left: 0px; top: 0px; display: none;">
+                                            <!-- <h2>浙江温州市瑞安地区二级代理：柴海燕</h2> -->
+                                            <div class="jmszshhy">
+                                                <div class="jmszstop">
+                                                    <div class="jmszsleft fl"><img src="images/sect5-1.jpg" width="307" height="167"></div>
+                                                    <div class="jmszsright fr">
+                                                        <dl>
+                                                            <dd><span>加盟级别</span>：浙江温州市瑞安地区二级代理</dd>
+                                                            <dd><span>加盟店所在地</span>：江苏</dd>
+                                                            <dd><span>开业时间</span>：2010</dd>
+                                                            <dd><span>年盈利</span>：</dd>
+                                                            <dd><span>印象标签</span>：<strong class="jmszsjs jmszsstr">技术好</strong><strong class="jmszszy jmszsstr">专业</strong><strong class="jmszshfl jmszsstr">好盈利</strong></dd>
+                                                        </dl>
+                                                    </div>
+                                                </div>
+                                                <div class="jmszsbottom">
+                                                    <h3>加盟感言：</h3>
+                                                    <p>英涛是我从事美容业多年来，见过的祛斑技术最硬的品牌，它的潜力是无限的。看到他们的祛斑效果，我毫不犹豫地把原先的店面改装成英涛加盟店，原本门可罗雀的门口变得异常火爆起来。</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li style="position: absolute; width: 750px; left: 0px; top: 0px; display: none;">
+                                            <!-- <h2>邱良峰</h2> -->
+                                            <div class="jmszshhy">
+                                                <div class="jmszstop">
+                                                    <div class="jmszsleft fl"><img src="images/sect5-1.jpg" width="307" height="167"></div>
+                                                    <div class="jmszsright fr">
+                                                        <dl>
+                                                            <dd><span>加盟级别</span>：宁波市总代理</dd>
+                                                            <dd><span>加盟店所在地</span>：江苏</dd>
+                                                            <dd><span>开业时间</span>：2010</dd>
+                                                            <dd><span>年盈利</span>：</dd>
+                                                            <dd><span>印象标签</span>：<strong class="jmszsjs jmszsstr">技术好</strong><strong class="jmszszy jmszsstr">专业</strong><strong class="jmszshfl jmszsstr">好盈利</strong></dd>
+                                                        </dl>
+                                                    </div>
+                                                </div>
+                                                <div class="jmszsbottom">
+                                                    <h3>入选感言：</h3>
+                                                    <p>在遇到英涛之前，我也是开美容院的，但是生意却不是很好，再继续这样下去很有可能倒闭，必须重新寻找出路。后来寻找了多家祛斑祛痘产品、美容品牌等，包括英涛在内，都做了详细的了解和对比，最终我选定英涛，拿下宁波市的代理。因为英涛的色素提取技术是国家专利技术，别家都没有，市场反应效果也非常好，值得我信赖。</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li style="position: absolute; width: 750px; left: 0px; top: 0px; display: none;">
+                                            <!-- <h2>蔡世平</h2> -->
+                                            <div class="jmszshhy">
+                                                <div class="jmszstop">
+                                                    <div class="jmszsleft fl"><img src="images/sect5-1.jpg" width="307" height="167"></div>
+                                                    <div class="jmszsright fr">
+                                                        <dl>
+                                                            <dd><span>加盟级别</span>：加盟商</dd>
+                                                            <dd><span>加盟店所在地</span>：江苏</dd>
+                                                            <dd><span>开业时间</span>：2015年3月</dd>
+                                                            <dd><span>年盈利</span>：</dd>
+                                                            <dd><span>印象标签</span>：<strong class="jmszsjs jmszsstr">技术好</strong><strong class="jmszszy jmszsstr">专业</strong><strong class="jmszshfl jmszsstr">好盈利</strong></dd>
+                                                        </dl>
+                                                    </div>
+                                                </div>
+                                                <div class="jmszsbottom">
+                                                    <h3>入选感言：</h3>
+                                                    <p>2015年3月6日，我的英涛祛斑高端美容加盟店在深圳盛大开业。在遇到之前，我一直都是从事美容行业的，有着丰富的美容经验。一个美容店，如果没有好的特色项目，是留不住客户的，从而难以经营下去。而英涛是我遇到的最好的一家专业祛斑祛痘美容品牌，他们的色素提取技术祛斑效果为我的美容店赢得了非常好的口碑，带来了源源不断的财富。</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li style="position: absolute; width: 750px; left: 0px; top: 0px; display: none;">
+                                            <!-- <h2>张总</h2> -->
+                                            <div class="jmszshhy">
+                                                <div class="jmszstop">
+                                                    <div class="jmszsleft fl"><img src="images/sect5-1.jpg" width="307" height="167"></div>
+                                                    <div class="jmszsright fr">
+                                                        <dl>
+                                                            <dd><span>加盟级别</span>：河北省总代理</dd>
+                                                            <dd><span>加盟店所在地</span>：江苏</dd>
+                                                            <dd><span>开业时间</span>：2014</dd>
+                                                            <dd><span>年盈利</span>：</dd>
+                                                            <dd><span>印象标签</span>：<strong class="jmszsjs jmszsstr">技术好</strong><strong class="jmszszy jmszsstr">专业</strong><strong class="jmszshfl jmszsstr">好盈利</strong></dd>
+                                                        </dl>
+                                                    </div>
+                                                </div>
+                                                <div class="jmszsbottom">
+                                                    <h3>入选感言：</h3>
+                                                    <p>我脸上的斑很多年了，试过很多祛斑方法、祛斑技术都没能彻底祛干净。后来听朋友说南京英涛祛斑效果比激光还要彻底安全，而且还不复发，于是我心动了。因为我也是开美容院的，对这个行业特别了解，有一项好的祛斑技术对一个美容院来说很重要，可以带来的利润是无法想象的，如果英涛的祛斑效果真的好的话，那么我就把我的美容店换成英涛加盟店。于是我来来到南京英涛祛斑研究所总部，一边祛斑一边了解加盟政策。当斑祛掉后，我自己都惊呆了，这完全是我的美容院无法做到的，于是我毫不犹地拿下河北省的代理商，完全抛弃了原先想要加盟的想法，实践也证明，我的选择没有错。现在整个河北省想要加盟的加盟商都得从我这加盟，真正的是客源不断、利润丰厚。</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li style="position: absolute; width: 750px; left: 0px; top: 0px; display: list-item; opacity: 0.341056;">
+                                            <!-- <h2>文娟</h2> -->
+                                            <div class="jmszshhy">
+                                                <div class="jmszstop">
+                                                    <div class="jmszsleft fl"><img src="images/sect5-1.jpg" width="307" height="167"></div>
+                                                    <div class="jmszsright fr">
+                                                        <dl>
+                                                            <dd><span>加盟级别</span>：单店加盟</dd>
+                                                            <dd><span>加盟店所在地</span>：江苏</dd>
+                                                            <dd><span>开业时间</span>：2015年6月</dd>
+                                                            <dd><span>年盈利</span>：</dd>
+                                                            <dd><span>印象标签</span>：<strong class="jmszsjs jmszsstr">技术好</strong><strong class="jmszszy jmszsstr">专业</strong><strong class="jmszshfl jmszsstr">好盈利</strong></dd>
+                                                        </dl>
+                                                    </div>
+                                                </div>
+                                                <div class="jmszsbottom">
+                                                    <h3>入选感言：</h3>
+                                                    <p>英涛是我从事美容业多年来，见过的祛斑技术最硬的品牌，它的潜力是无限的。看到他们的祛斑效果，我毫不犹豫地把原先的店面改装成英涛加盟店，原本门可罗雀的门口变得异常火爆起来。</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li style="position: absolute; width: 750px; left: 0px; top: 0px; display: list-item; opacity: 0.658944;">
+                                            <!-- <h2>李女士</h2> -->
+                                            <div class="jmszshhy">
+                                                <div class="jmszstop">
+                                                    <div class="jmszsleft fl"><img src="images/sect5-1.jpg" width="307" height="167"></div>
+                                                    <div class="jmszsright fr">
+                                                        <dl>
+                                                            <dd><span>加盟级别</span>：加盟商</dd>
+                                                            <dd><span>加盟店所在地</span>：江苏</dd>
+                                                            <dd><span>开业时间</span>：2年</dd>
+                                                            <dd><span>年盈利</span>：20-30万</dd>
+                                                            <dd><span>印象标签</span>：<strong class="jmszsjs jmszsstr">技术好</strong><strong class="jmszszy jmszsstr">专业</strong><strong class="jmszshfl jmszsstr">好盈利</strong></dd>
+                                                        </dl>
+                                                    </div>
+                                                </div>
+                                                <div class="jmszsbottom">
+                                                    <h3>入选感言：</h3>
+                                                    <p>我很庆幸选择了英涛加盟，也感谢公司总部长久以来对我的帮助和支持，让我从无经验到客似云来。美容创业加盟英涛，真的是一项值得奋斗终身的事业。</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li style="position: absolute; width: 750px; left: 0px; top: 0px; display: none;">
+                                            <!-- <h2>赵颜</h2> -->
+                                            <div class="jmszshhy">
+                                                <div class="jmszstop">
+                                                    <div class="jmszsleft fl"><img src="images/sect5-1.jpg" width="307" height="167"></div>
+                                                    <div class="jmszsright fr">
+                                                        <dl>
+                                                            <dd><span>加盟级别</span>：单店加盟</dd>
+                                                            <dd><span>加盟店所在地</span>：江苏</dd>
+                                                            <dd><span>开业时间</span>：2年</dd>
+                                                            <dd><span>年盈利</span>：30-40万</dd>
+                                                            <dd><span>印象标签</span>：<strong class="jmszsjs jmszsstr">技术好</strong><strong class="jmszszy jmszsstr">专业</strong><strong class="jmszshfl jmszsstr">好盈利</strong></dd>
+                                                        </dl>
+                                                    </div>
+                                                </div>
+                                                <div class="jmszsbottom">
+                                                    <h3>入选感言：</h3>
+                                                    <p>从事美容行业以来，从没见过像英涛祛斑这般好的技术和产品，它为我赢得了良好的市场口碑。我以低投资加盟英涛，店面也不用豪华的装修，经过总部的扶持，现在年盈利可以达50万。我非常庆幸选择了加盟英涛，给我带来了丰厚的市场利润，这是我以前都不敢想的。</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li style="position: absolute; width: 750px; left: 0px; top: 0px; display: none;">
+                                            <!-- <h2>蒲小兰</h2> -->
+                                            <div class="jmszshhy">
+                                                <div class="jmszstop">
+                                                    <div class="jmszsleft fl"><img src="images/sect5-1.jpg" width="307" height="167"></div>
+                                                    <div class="jmszsright fr">
+                                                        <dl>
+                                                            <dd><span>加盟级别</span>：单店加盟</dd>
+                                                            <dd><span>加盟店所在地</span>：江苏</dd>
+                                                            <dd><span>开业时间</span>：1年</dd>
+                                                            <dd><span>年盈利</span>：30-40万</dd>
+                                                            <dd><span>印象标签</span>：<strong class="jmszsjs jmszsstr">技术好</strong><strong class="jmszszy jmszsstr">专业</strong><strong class="jmszshfl jmszsstr">好盈利</strong></dd>
+                                                        </dl>
+                                                    </div>
+                                                </div>
+                                                <div class="jmszsbottom">
+                                                    <h3>入选感言：</h3>
+                                                    <p>一直希望自己的事业能够充满浪漫和美丽，而英涛就是我圆梦的星向标。他们的色素提取技术不仅能让我帮顾客打造美丽，赚取财富，还能营造情人之间的浪漫，真是一举多得。</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="hd"><ul><li class=""></li><li class=""></li><li class=""></li><li class=""></li><li class=""></li><li class=""></li><li class=""></li><li class="on"></li><li class=""></li><li class=""></li></ul></div>
+                            </div>
+                            <script>jQuery(".jmszs").slide({ mainCell: ".bd ul", effect: "fold", autoPlay: true });</script>
+                        </div>
+                    </div>
                 </div>
             </section>
-            <section class="section section4 benefits">
+            <section class="section section4 benefits clearfix">
                 <div class="sect_title">
                     <p>
-                        <span>产品优势</span>
-                        <span>Produc Benefits</span>
+                        <span class="txt_cn col_main">产品优势</span>
+                        <span class="txt_en">Produc Benefits</span>
                         <a href="" class="advisory">免费咨询服务</a>
                     </p>
                 </div>
                 <div class="sect_cont">
-                    <div class="inv_pro">
+                    <div class="inv_pro fl">
                         <h2 class="bl_title">
-                            <span></span>
+                            <span class="crl_sp"></span>
                             <span>案例视频</span>
                             <a href="">MORE</a>
                         </h2>
+
                         <div class="video">
-                            <h2>产品突破性优势</h2>
-                            <ul>
+                            <div class="vedio">
+
+                            </div>
+                            <ul class="benefits_menu bdf4">
+                                <h2>产品突破性优势</h2>
                                 <li>
                                     <a href="">祛斑过程中无不良反应，无痛苦</a>
                                 </li>
@@ -379,102 +663,159 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="pro">
-                        <div class="case_area">
-                            <p>去除雀斑系列&nbsp;解决方案</p>
-                            <img src="../images/img01.png">
-                        </div>
-                        <div class="case_area">
+                    <div class="pro fr bdf4">
+                        <h2 class="bl_title">
+                            <span class="crl_sp"></span>
+                            <span>祛斑产品</span>
+                            <a href="">MORE</a>
+                        </h2>
+                        <div class="pro_area_con clearfix">
                             <div class="case_area">
-                                <p>去除雀斑系列&nbsp;解决方案</p>
-                                <img src="../images/img01.png">
+                                <p class="qb_pro">去除雀斑系列&nbsp;解决方案</p>
+                                <img src="images/sect5-1.jpg">
                             </div>
                             <div class="case_area">
-                                <div class="case_area">
-                                    <p>去除雀斑系列&nbsp;解决方案</p>
-                                    <img src="../images/img01.png">
-                                </div>
-                                <div class="case_area">
-                                    <div class="case_area">
-                                        <p>去除雀斑系列&nbsp;解决方案</p>
-                                        <img src="../images/img01.png">
-                                    </div>
-                                    <div class="case_area">
-                                        <div class="case_area">
-                                            <div class="case_area">
-                                                <p>去除雀斑系列&nbsp;解决方案</p>
-                                                <img src="../images/img01.png">
-                                            </div>
-                                            <div class="case_area">
-                                                <div class="case_area">
-                                                    <div class="case_area">
-                                                        <p>去除雀斑系列&nbsp;解决方案</p>
-                                                        <img src="../images/img01.png">
-                                                    </div>
-                                                    <div class="case_area"></div>
-                                                </div>
+                                <p class="qb_pro">去除雀斑系列&nbsp;解决方案</p>
+                                <img src="images/sect5-1.jpg">
+                            </div>
+                            <div class="case_area">
+                                <p class="qb_pro">去除雀斑系列&nbsp;解决方案</p>
+                                <img src="images/sect5-1.jpg">
+                            </div>
+                        </div>
+                        <div class="pro_area_con clearfix">
+
+                            <div class="case_area">
+                                <p class="qb_pro">去除雀斑系列&nbsp;解决方案</p>
+                                <img src="images/sect5-1.jpg">
+                            </div>
+                            <div class="case_area">
+                                <p class="qb_pro">去除雀斑系列&nbsp;解决方案</p>
+                                <img src="images/sect5-1.jpg">
+                            </div>
+                            <div class="case_area">
+                                <p class="qb_pro">去除雀斑系列&nbsp;解决方案</p>
+                                <img src="images/sect5-1.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section class="section section5 joinway">
+            <section class="section section5 joinway clearfix">
                 <div class="sect_title">
                     <p>
-                        <span>加盟流程</span>
-                        <span>Join Process</span>
+                        <span class="txt_cn col_main">加盟流程</span>
+                        <span class="txt_en">Join Process</span>
                         <a href="" class="advisory">免费咨询服务</a>
                     </p>
                 </div>
-                <div class="sect_cont">
-                    <div class="join_left"></div>
-                    <div class="case_area">
-                        <p>去除雀斑系列&nbsp;解决方案</p>
-                        <img src="../images/img01.png">
-                    </div>
-                    <div class="case_area">
-                        <div class="case_area">
-                            <p>去除雀斑系列&nbsp;解决方案</p>
-                            <img src="../images/img01.png">
-                        </div>
-                        <div class="case_area">
+                <div class="sect_cont clearfix">
+                    <div class="join_cont clearfix">
+                        <div class="join_left">加盟前</div>
+                        <div class="case_area_cont">
                             <div class="case_area">
-                                <p>去除雀斑系列&nbsp;解决方案</p>
-                                <img src="../images/img01.png">
+                                <img src="images/sect5-1.jpg" />
+                                <p class="col_main txtct">签订合同</p>
                             </div>
                             <div class="case_area">
-                                <div class="case_area">
-                                    <p>去除雀斑系列&nbsp;解决方案</p>
-                                    <img src="../images/img01.png">
-                                </div>
-                                <div class="case_area">
-                                    <div class="case_area">
-                                        <div class="case_area">
-                                            <p>去除雀斑系列&nbsp;解决方案</p>
-                                            <img src="../images/img01.png">
-                                        </div>
-                                        <div class="case_area">
-                                            <div class="case_area">
-                                                <div class="case_area">
-                                                    <p>去除雀斑系列&nbsp;解决方案</p>
-                                                    <img src="../images/img01.png">
-                                                </div>
-                                                <div class="case_area"></div>
-                                            </div>
-                                            <div class="sub_carousel"></div>
+                                <img src="images/sect5-1.jpg" />
+                                <p class="col_main txtct">赴店考察</p>
+                            </div>
+                            <div class="case_area">
+                                <img src="images/sect5-1.jpg" />
+                                <p class="col_main txtct">意向加盟</p>
+                            </div>
+                            <div class="case_area">
+                                <img src="images/sect5-1.jpg" />
+                                <p class="col_main txtct">在线咨询</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="join_cont clearfix">
+                        <div class="join_left">加盟中</div>
+                        <div class="case_area_cont">
+                            <div class="case_area">
+                                <img src="images/sect5-1.jpg" />
+                                <p class="col_main txtct">技术培训</p>
+                            </div>
+                            <div class="case_area">
+                                <img src="images/sect5-1.jpg" />
+                                <p class="col_main txtct">产品培训</p>
+                            </div>
+                            <div class="case_area">
+                                <img src="images/sect5-1.jpg" />
+                                <p class="col_main txtct">资料交接</p>
+                            </div>
+                            <div class="case_area">
+                                <img src="images/sect5-1.jpg" />
+                                <p class="col_main txtct">营销培训</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="join_cont clearfix">
+                        <div class="join_left">加盟后</div>
+                        <div class="case_area_cont">
+                            <div class="case_area">
+                                <img src="images/sect5-1.jpg" />
+                                <p class="col_main txtct">跟踪指导</p>
+                            </div>
+                            <div class="case_area">
+                                <img src="images/sect5-1.jpg" />
+                                <p class="col_main txtct">客源输送</p>
+                            </div>
+                            <div class="case_area">
+                                <img src="images/sect5-1.jpg" />
+                                <p class="col_main txtct">正常营业</p>
+                            </div>
+                            <div class="case_area">
+                                <img src="images/sect5-1.jpg" />
+                                <p class="col_main txtct">店面布置</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section class="section section6 frecklefree">
+            <div class="join_carousel_cont">
+                <div class="join_carousel">
+                    <p class="join_carousel_p txtct">
+                        <img src="images/join-title.png" />
+                    </p>
+                    <div class="content5_2">
+                        <div class="content5_2yp">
+                            <div class="bd">
+                                <ul>
+                                    <li class="clone"><img src="images/sect5-1.jpg"></li>
+                                    <li><img src="images/sect5-1.jpg"></li>
+                                    <li><img src="images/sect5-1.jpg"></li>
+                                    <li><img src="images/sect5-1.jpg"></li>
+                                    <li><img src="images/sect5-1.jpg"></li>
+                                    <li><img src="images/sect5-1.jpg"></li>
+                                    <li><img src="images/sect5-1.jpg"></li>
+                                    <li><img src="images/sect5-1.jpg"></li>
+                                </ul>
+                            </div>
+                            <a class="prev content5_2fx" href="javascript:void(0)"></a> <a class="next content5_2fx" href="javascript:void(0)"></a>
+                        </div>
+                        <script>jQuery(".content5_2yp").slide({ mainCell: ".bd ul", vis: 4, prevCell: ".prev", nextCell: ".next", effect: "leftLoop" });</script>
+                    </div>
+                </div>
+            </div>
+            <section class="section section6 frecklefree clearfix">
                 <div class="sect_title">
                     <p>
-                        <span>免费祛斑</span>
-                        <span>Free of charge</span>
+                        <span class="txt_cn col_main">免费祛斑</span>
+                        <span class="txt_en">Free of charge</span>
                         <a href="" class="advisory">免费咨询服务</a>
                     </p>
                 </div>
                 <div class="sect_cont">
                     <div class="charge_bl">
                         <h2 class="bl_title">
-                            <span></span>
+                            <span class="crl_sp"></span>
                             <span>祛斑科普</span>
                             <a href="">MORE</a>
                         </h2>
-                        <img src="">
+                        <img src="images/sect6-1.jpg" />
                         <ul>
                             <li>
                                 <a href="">
@@ -510,11 +851,11 @@
                     </div>
                     <div class="charge_bl">
                         <h2 class="bl_title">
-                            <span></span>
+                            <span class="crl_sp"></span>
                             <span>祛斑食补</span>
                             <a href="">MORE</a>
                         </h2>
-                        <img src="">
+                        <img src="images/sect6-2.jpg" />
                         <ul>
                             <li>
                                 <a href="">
@@ -550,11 +891,11 @@
                     </div>
                     <div class="charge_bl">
                         <h2 class="bl_title">
-                            <span></span>
+                            <span class="crl_sp"></span>
                             <span>激光祛斑</span>
                             <a href="">MORE</a>
                         </h2>
-                        <img src="">
+                        <img src="images/sect6-3.jpg" />
                         <ul>
                             <li>
                                 <a href="">
@@ -590,35 +931,35 @@
                     </div>
                 </div>
             </section>
-            <section class="section section7 stain">
+            <section class="section section7 stain clearfix">
                 <div class="sect_title">
                     <p>
-                        <span>色斑分类</span>
-                        <span>Stain classification</span>
+                        <span class="txt_cn col_main">色斑分类</span>
+                        <span class="txt_en">Stain classification</span>
                         <a href="" class="advisory">免费咨询服务</a>
                     </p>
                 </div>
-                <div class="sect_cont">
-                    <h2>芳缘多Plus分层祛斑——对抗八类色斑难题</h2>
-                    <img src="">
-                    <a href="">
+                <div class="sect_cont txtct">
+                    <!-- <h2>芳缘多Plus分层祛斑——对抗八类色斑难题</h2> -->
+                    <!-- <img src="images/sect7-1.jpg"> -->
+                    <a href="" class="sect7_link">
                         我是哪种斑？
-                        <span class="icon icon-arrow"></span>
+                        <span>></span>
                     </a>
                 </div>
             </section>
-            <section class="section section8 merchants">
+            <section class="section section8 merchants clearfix">
                 <div class="sect_title">
                     <p>
-                        <span>加盟招商</span>
-                        <span>Joining Merchants</span>
+                        <span class="txt_cn col_main">加盟招商</span>
+                        <span class="txt_en">Joining Merchants</span>
                         <a href="" class="advisory">免费咨询服务</a>
                     </p>
                 </div>
                 <div class="sect_cont">
                     <div class="form_cont">
-                        <form>
-                            <ul>
+                        <form class="contact_form">
+                            <ul class="form_menu">
                                 <li>
                                     <span>姓名：</span>
                                     <input type="text">
@@ -645,146 +986,152 @@
                                         <option option="option3">余杭区</option>
                                     </select>
                                 </li>
-                                <li>
-                                    <span>咨询内容</span>
-                                    <textarea rows="3"></textarea>
+                                <li class="textarea_li">
+                                    <span>咨询内容：</span>
+                                    <textarea rows="5"></textarea>
                                 </li>
                                 <li>
-                                    <button type="button">确认提交</button>
+                                    <span></span>
+                                    <p>
+                                        <button type="button">确认提交</button>
+                                    </p>
                                 </li>
                             </ul>
                         </form>
                     </div>
                 </div>
             </section>
-            <section class="section section9 links">
-                <div class="sect_title">
-                    <p>
-                        <span>友情链接</span>
-                        <span>Friendly Link</span>
-                        <a href="" class="advisory">免费咨询服务</a>
+            <section class="section section9 links clearfix">
+                <div class="sect_cont">
+                    <div class="sect_title">
+                        <p>
+                            <span class="txt_cn col_main">友情链接</span>
+                            <span class="txt_en">Friendly Link</span>
+                        </p>
+                    </div>
+                    <p class="link_p">
+                        <a href="">烟台婚纱摄影</a>
+                        <a href="">三亚婚纱摄影</a>
+                        <a href="">皇帝岛一日游</a>
+                        <a href="">襄阳婚纱摄影</a>
+                        <a href="">杭州婚纱摄影</a>
+                        <a href="">影楼实景</a>
+                        <a href="">合肥婚纱摄影</a>
+                        <a href="">合肥拍婚纱照</a>
+                        <a href="">武汉拍摄婚纱照哪家好</a>
                     </p>
                 </div>
-                <p>
-                    <a href="">烟台婚纱摄影</a>
-                    <a href="">三亚婚纱摄影</a>
-                    <a href="">皇帝岛一日游</a>
-                    <a href="">襄阳婚纱摄影</a>
-                    <a href="">杭州婚纱摄影</a>
-                    <a href="">影楼实景</a>
-                    <a href="">合肥婚纱摄影</a>
-                    <a href="">合肥拍婚纱照</a>
-                    <a href="">武汉拍摄婚纱照哪家好</a>
-                </p>
             </section>
         </div>
         <footer class="footer" id="footer">
             <div class="footCon">
-            <div class="hWidth">
-                <div class="footLeft">
-                    <div class="footItem">
-                        <div class="footItemL">
-                            <i class="ico xm"></i>
+                <div class="hWidth">
+                    <div class="footLeft">
+                        <div class="footItem">
+                            <div class="footItemL">
+                                <i class="ico xm"></i>
+                            </div>
+                            <div class="footItemR">
+                                <ul class="fIRT">
+                                    <li>
+                                        <!--<a href="/yfxm/qqb" target="_blank">5天祛雀斑</a>-->
+                                    </li>
+                                    <li>
+                                        <a href="/yfxm/qhhb" target="_blank">28天祛黄褐斑</a>
+                                    </li>
+                                    <li>
+                                        <a href="/yfxm/qzpb" target="_blank">15天祛痘痘</a>
+                                    </li>
+                                    <!--<li>
+                                        <a href="/yfxm/qssczb" target="_blank">3次祛色素沉着斑</a>
+                                    </li>-->
+                                    <li>
+                                        <a href="/yfxm/qqgzdb" target="_blank">28天祛铅汞中毒斑</a>
+                                    </li>
+                                    <!--<li>
+                                        <a href="/yfxm/qdqy" target="_blank">一次性根除真皮斑</a>
+                                    </li>-->
+                                </ul>
+                                <ul class="fIRB">
+                                    <li>
+                                        <a href="/yfxm/qlnb" target="_blank">一次性根除真皮斑</a>
+                                    </li>
+                                    <li>
+                                        <a>3次祛色素沉着斑</a>
+                                    </li>
+                                    <!--<li>
+                                        <a>祛黄美白</a>
+                                    </li>-->
+                                    <li>
+                                        <a>30天去除毛孔粗大、肤色暗黄问题</a>
+                                    </li>
+                                    <!--<li>
+                                        <a>祛痣</a>
+                                    </li>
+                                    <li>
+                                        <a>祛除汗管瘤</a>
+                                    </li>-->
+                                </ul>
+                            </div>
                         </div>
-                        <div class="footItemR">
-                            <ul class="fIRT">
-                                <li>
-                                    <a href="/yfxm/qqb" target="_blank">5天祛雀斑</a>
-                                </li>
-                                <li>
-                                    <a href="/yfxm/qhhb" target="_blank">28天祛黄褐斑</a>
-                                </li>
-                                <li>
-                                    <a href="/yfxm/qzpb" target="_blank">一次祛真皮斑</a>
-                                </li>
-                                <li>
-                                    <a href="/yfxm/qssczb" target="_blank">3次祛色素沉着斑</a>
-                                </li>
-                                <li>
-                                    <a href="/yfxm/qqgzdb" target="_blank">28天祛铅汞中毒斑</a>
-                                </li>
-                                <li>
-                                    <a href="/yfxm/qdqy" target="_blank">15天祛痘去印</a>
-                                </li>
-                            </ul>
-                            <ul class="fIRB">
-                                <li>
-                                    <a href="/yfxm/qlnb" target="_blank">一次祛老年斑</a>
-                                </li>
-                                <li>
-                                    <a>修复毛孔粗大</a>
-                                </li>
-                                <li>
-                                    <a>祛黄美白</a>
-                                </li>
-                                <li>
-                                    <a>祛扁平疣祛除红血丝</a>
-                                </li>
-                                <li>
-                                    <a>祛痣</a>
-                                </li>
-                                <li>
-                                    <a>祛除汗管瘤</a>
-                                </li>
-                            </ul>
+                        <div class="footSolid"></div>
+                        <div class="footBot">
+                            <div class="footLogo">
+                                <a href="/" target="_blank">
+                                    <img src="images/h27.png" width="274" height="62">
+                                </a>
+                            </div>
+                            <div class="footIso">
+                                <div class="fIL">
+                                    <a href="http://www.cqc.com.cn/chinese/index.htm" target="_blank">
+                                        <i class="ico iso"></i>
+                                    </a>
+                                </div>
+                                <div class="fIR">
+                                    <a href="http://www.cqc.com.cn/chinese/index.htm" target="_blank">
+                                        <p>ISO 9001</p>
+
+                                        <p>质量管理体系认证</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footDoc">
+                                <div class="fIL">
+                                    <a href="http://www.21wecan.com" target="_blank">
+                                        <img src="images/h28.png" width="50" height="50">
+                                    </a>
+                                </div>
+                                <div class="fIR">
+                                    <a href="http://www.21wecan.com" target="_blank">
+                                        <p>国家卫生部</p>
+
+                                        <p>卫生许可证</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footTel">
+                                <a>免费咨询电话</a>
+                            </div>
                         </div>
+                        <div class="footSolid"></div>
                     </div>
-                    <div class="footSolid"></div>
-                    <div class="footBot">
-                        <div class="footLogo">
-                            <a href="/" target="_blank">
-                                <img src="images/h27.png" width="274" height="62">
-                            </a>
-                        </div>
-                        <div class="footIso">
-                            <div class="fIL">
-                                <a href="http://www.cqc.com.cn/chinese/index.htm" target="_blank">
-                                    <i class="ico iso"></i>
-                                </a>
-                            </div>
-                            <div class="fIR">
-                                <a href="http://www.cqc.com.cn/chinese/index.htm" target="_blank">
-                                    <p>ISO 9001</p>
-                                    <p>质量管理体系认证</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="footDoc">
-                            <div class="fIL">
-                                <a href="http://www.21wecan.com" target="_blank">
-                                    <img src="images/h28.png" width="50" height="50">
-                                </a>
-                            </div>
-                            <div class="fIR">
-                                <a href="http://www.21wecan.com" target="_blank">
-                                    <p>国家卫生部</p>
-                                    <p>卫生许可证</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="footTel">
-                            <a>免费咨询电话</a>
-                        </div>
+                    <div class="footRight">
+                        <p class="footWx">
+                            <img src="images/qrcode.jpg" width="142" height="142" alt="微信">
+                        </p>
+
+                        <p class="fWT">
+                            <a class="fWl">官方微信</a>
+                            <a class="fWr">fydquban</a>
+                        </p>
+
+                        <p class="fWB">
+                            <a class="fWl">更多案例！</a>
+                            <a class="fWr">更多优惠</a>
+                        </p>
                     </div>
-                    <div class="footSolid"></div>
                 </div>
-                <div class="footRight">
-                    <p class="footWx">
-                        <img src="images/h26.jpg" width="142" height="142" alt="微信">
-                    </p>
-                    <p class="fWT">
-                        <a class="fWl">官方微信</a>
-                        <a class="fWr">ytquban</a>
-                    </p>
-                    <p class="fWB">
-                        <a class="fWl">更多案例！</a>
-                        <a class="fWr">更多优惠</a>
-                    </p>
-                </div>
-            </div>
-            <div class="footGrant">总部地址：</div>
-            <div class="footGrant1">
-                <a href="" target="_blank">备案：苏ICP备14021845号</a>
+                <div class="footGrant">2015&nbsp;&nbsp;芳缘多祛斑祛痘&nbsp;&nbsp;All Rights Reserved&nbsp;&nbsp;浙江省杭州市滨江区江南大道3880号华荣时代大厦2003室&nbsp;&nbsp;固定电话：0571-86980926</div>
             </div>
         </footer>
     </div>
