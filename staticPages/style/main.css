@@ -82,7 +82,7 @@ a {
     text-align: center;
 }
 .col_main {
-    color: #e03082;
+    color: #ed2180;
 }
 
 /*清除浮动*/
@@ -152,7 +152,7 @@ a {
     width: 50px;
     height: 50px;
     color: #fff;
-    background: #e03082;
+    background: #ed2180;
     font-size: 16px;
 }
 .ad_ph_num {
@@ -171,7 +171,7 @@ a {
     font-size: 18px;
     color: #fff;
     text-align: center;
-    background: #e03082;
+    background: #ed2180;
 }
 .picc_code {
     position: absolute;
@@ -259,7 +259,7 @@ a {
     cursor: pointer;
 }
 .sb_nav li.on {
-    background: #e03082;
+    background: #ed2180;
     /*color: #fff;*/
 }
 .slideBox1 .bd {
@@ -285,7 +285,7 @@ a {
     width: 10px;
     height: 10px;
     border-radius: 100%;
-    border:2px solid #e03082;
+    border:2px solid #ed2180;
 }
 .txt_cn{
     font-size: 22px;
@@ -299,7 +299,7 @@ a {
     position: absolute;
     bottom: -5px;
     left:0px;
-    border-bottom: 2px solid #e03082;
+    border-bottom: 2px solid #ed2180;
 }
 .txt_en{
     font-size: 18px;
@@ -345,7 +345,7 @@ a {
 .inv_table{
     width: 300px;
     height: 390px;
-    color: #e03082;
+    color: #ed2180;
     border-collapse: collapse;
     text-align: center;
 }
@@ -417,6 +417,10 @@ a {
 .inv_bl img{
     width: 140px;
     height: 90px;
+    opacity: 0.6;
+}
+.inv_bl img:hover{
+    opacity: 1;
 }
 .inv_bl_cont{
     display: inline-block;
@@ -542,15 +546,24 @@ a {
 .jmszs .hd ul li.on{ background:#f00;}
 
 /*Section4 Style*/
+.video{
+    position: relative;
+    width: 340px;
+    height: 210px;
+}
+.vedio_container .vjs-default-skin .vjs-big-play-button{
+    right: 12.5em;
+    bottom: 6.5em;
+}
 .section4 .inv_pro {
     width: 340px;
 }
 .benefits_menu{
-    color: #e03082;
+    color: #ed2180;
 }
 .benefits_menu h2{
     text-align: center;
-    border-top: 2px solid #e03082;
+    border-top: 2px solid #ed2180;
     font-size: 18px;
 }
 .benefits_menu li {
@@ -563,7 +576,7 @@ a {
     display: inline-block;
     border-top: 2px solid #f4f4f4;
     text-align: left;
-    color: #e03082;
+    color: #ed2180;
     font-size: 16px;
     padding-left: 68px;
     position: relative;
@@ -602,7 +615,7 @@ a {
 .section4 .case_area{
     position: relative;
     float: left;
-    margin:0 31px 0 0; 
+    margin:0 22px 0 0; 
 }
 .pro_area_con {
     margin-top: 20px;
@@ -612,12 +625,13 @@ a {
     margin-right: 0;
 }
 .section4 .case_area img{
-    width: 100%;
+    width: 247px;
+    height: 214px;
 }
 .qb_pro{
     display: none;
     position: absolute;
-    bottom: 0;
+    bottom: 4px;
     left: 0;
     text-align: center;
     color: #fff;
@@ -663,7 +677,7 @@ a {
     height: 5px;
     left:5px;
     top: 13px;
-    background: #e03082;
+    background: #ed2180;
     border-radius: 100%;
 }
 .charge_bl ul li a:hover{
@@ -712,17 +726,17 @@ a {
 .join_carousel_p{
     margin-top: 30px;
 }
-.content5_2{width:1200px; margin:0 auto;/* padding-top:21px;*/}
-.content5_2 .content5_2yp{width:1198px; height:220px; margin:0 auto; /*background:#FFF; border:1px solid #dcdcdc; box-shadow:0px 3px 0px #c8c8c7; */overflow:hidden; position:relative;}
-.content5_2 .content5_2yp .bd{width:1098px; margin:0 auto; /*border-left:1px solid #dcdcdc; border-right:1px solid #dcdcdc; */height:220px;}
+/*.content5_2{width:1200px; margin:0 auto;}*/
+.content5_2 .content5_2yp{width:1198px; height:220px; margin:0 auto; overflow:hidden; position:relative;}
+.content5_2 .content5_2yp .bd{width:1098px; margin:0 auto; height:220px;}
 .content5_2 .content5_2yp .bd ul{overflow:hidden;}
-.content5_2 .content5_2yp .bd ul li{ padding-top:35px; padding-left:20px; width:280px; float:left;}
+.content5_2 .content5_2yp .bd ul li{ padding-top:35px; /*padding-left:20px;*/margin-left:20px;/* width:280px;*/ float:left;}
 .content5_2 .content5_2yp .bd ul li img{
-    width: 100%;
+    width: 240px;
 }
 /*.content5_2 .content5_2yp .bd ul li p{font-size:14px; line-height:30px; text-align:center;}*/
 .content5_2fx{position:absolute; width:30px; height:85px; top:110px;text-align:center; font-size:30px; line-height:85px;color:#FFF; font-weight:bold;}
-.content5_2 .content5_2yp .prev{right:20px; background:url(../images/qbqdimg64.jpg) no-repeat;}
+.content5_2 .content5_2yp .prev{right:58px; background:url(../images/qbqdimg64.jpg) no-repeat;}
 .content5_2 .content5_2yp .next{left:20px; background:url(../images/qbqdimg60.jpg) no-repeat;}
 .content5_2 .content5_2yp .prev:hover{background:url(../images/qbqdimg61.jpg) no-repeat;}
 .content5_2 .content5_2yp .next:hover{background:url(../images/qbqdimg65.jpg) no-repeat;}
@@ -745,7 +759,7 @@ a {
     text-align: center;
     font-size: 18px;
     color: #fff;
-    background:#e03082;
+    background:#ed2180;
     border-radius: 30px; 
 }
 .sect7_link span{
@@ -753,7 +767,7 @@ a {
     width: 25px;
     line-height: 25px;
     border-radius: 100%;
-    color:#e03082;
+    color:#ed2180;
     background: #fff;
 }
 /* 加入我们*/
@@ -796,6 +810,7 @@ a {
 }
 .form_menu .textarea_li span{
     vertical-align:140px;
+    vertical-align:0\0;
 }
 .form_menu li textarea{
     width:451px;
@@ -1014,8 +1029,15 @@ a {
 .icon{
     width: 100%;
     height: 100%;
-    display: block;
+    display: inline-block;
     background: url(../images/cbg.png) no-repeat center center;
+}
+td .icon{
+   
+    height: 35px;
+}
+tr td:last-child .icon{
+    background-position: -192px -173px;
 }
 .icon-logo{
     height: 50px;
