@@ -245,10 +245,10 @@
 
 
 /**********Products Style**********/
-.product .sub_top{
+.product .sub_top,.services .sub_top{
 	height: 140px;
 }
-.product .sub_title{
+.product .sub_title,.services .sub_title{
 	height: 50px;
 }
 .pro_group{
@@ -376,3 +376,95 @@ color: #fff;
 }
 
 /*==========列表页分页CSS结束==========*/
+
+
+/*map*/
+.map{
+	width: 100%;
+}
+.map img{
+	width: 100%;
+}
+/*==========服务中心Style==========*/
+.collect,.traffic{
+	width: 1200px;
+	margin: 30px auto 0;
+}
+.services .sub_title{
+	height: 100px;
+	/*width: 1200px;*/
+	padding-left: 30px;
+	/*border:none;*/
+}
+.services .sect_title{
+	width: 910px;
+	/*margin: 0 auto;
+	padding-left: 20px;
+	border-bottom: 2px solid #dcdcdc;*/
+}
+.services .sub_top_cont .sect_title{
+	margin: 30px 0 0 ;
+	padding-left: 30px;
+}
+.coll_lt{
+	height: 404px;
+	width: 402px;
+	float: left;
+	background: url(../images/collt01.jpg) no-repeat center center; 
+}
+.coll_lt a{
+	display: inline-block;
+	height: 60px;
+	line-height: 60px;
+	width: 100%;
+	margin-top: 200px;
+	opacity: 0;
+	cursor: pointer;
+}
+.coll_rt{
+	width: 755px;
+	float: right;
+}
+.coll_menu li{
+	width: 276px;
+	float: left;
+	margin-top: 66px;
+}
+.coll_menu li:nth-child(3n){
+	float: right;
+	width: 200px;
+}
+.coll_menu li a{
+	float: left;
+}
+.coll_menu li a span{
+	display: block;
+	text-align: center;
+	margin-top: 6px;
+}
+.coll_menu li img:hover{
+	transform: scale(1.2);
+}
+.traf_cont table{
+	margin-bottom: 30px;
+}
+.traf_cont td{
+	font-size: 16px;
+	height: 120px;
+	/*line-height: 10px;*/
+	color: #626262;
+	text-align: left;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+.traf_cont p img{
+	/*vertical-align: -25px;*/
+}
+.traf_cont td span{
+	/*display: inline-block;*/
+	/*height: 70px;
+	line-height: 70px;*/
+	font-size: 24px;
+	margin:0 20px;
+	white-space: nowrap;
+}
