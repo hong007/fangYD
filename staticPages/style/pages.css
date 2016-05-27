@@ -199,10 +199,10 @@
 .env_menu li img{
 	width: 100%;
 	height: 100%;
-	opacity: 0.6;
+	/*opacity: 0.6;*/
 }
 .env_menu li img:hover{
-	opacity: 1;
+	opacity: 0.8;
 }
 
 
@@ -239,8 +239,16 @@
 
 .mechanismHonorBottom{ width:1160px; margin:0 auto;/* overflow:hidden;*/}
 
-.mechanismHonorBottom li{ float:left; width:281px; height:221px; margin-right:12px; margin-top:10px; }
-.mechanismHonorBottom li p img{height: 100%;}
+.mechanismHonorBottom li{ float:left; width:281px; height:221px; margin:10px 12px 20px 0;}
+.mechanismHonorBottom li p:first-child{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	width: 281px;
+	background: #eee;
+	height: 200px;
+}
+/*.mechanismHonorBottom li p img{height: 100%;}*/
 .mechanismHonorBottom li:hover{ opacity:0.8;}
 
 
@@ -381,12 +389,40 @@ color: #fff;
 /*map*/
 .map{
 	width: 100%;
+	height: auto;
+	min-height:400px; 
+	position: relative;
+	margin-top: 50px;
 }
 .map img{
+	position: absolute;
+	left: 0;
+	top: 0;
+	/*bottom: 0;
+	right: 0;*/
+	height: 100%;
 	width: 100%;
+	z-index: -1;
+}
+.map_menu{
+	/*float: right;*/
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -120px;
+	width: 600px;
+}
+.map_menu li{
+	color: #fff;
+	font-size: 14px;
+	height: 40px;
+	line-height: 40px;
+	text-align: left;
+	position: relative;
+	padding-left: 40px;
 }
 /*==========服务中心Style==========*/
-.collect,.traffic{
+.collect,.traffic,.consulting{
 	width: 1200px;
 	margin: 30px auto 0;
 }
@@ -445,6 +481,75 @@ color: #fff;
 .coll_menu li img:hover{
 	transform: scale(1.2);
 }
+
+
+.cons_item{
+	width: 510px;
+	height: 240px;
+	display: inline-block;
+	margin-bottom: 40px;
+	padding: 0 10px 10px 0;
+	box-shadow: 0 0 5px rgba(0,0,0,0.6);
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.6);
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,0.6);
+	-ms-box-shadow: 0 0 5px rgba(0,0,0,0.6);
+	-o-box-shadow: 0 0 5px rgba(0,0,0,0.6);
+}
+.cons_item_lf{
+	width: 170px;
+	display: inline-block;
+}
+.cons_a{
+	width: 165px;
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 12px;
+	text-align: center;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 16px;
+	background: #ed2180;
+}
+.cons_menu{
+	width: 290px;
+	float: right;
+	margin-top: 12px;
+}
+.cons_menu li{
+	border-bottom: 1px solid #efefef;
+	padding-left: 60px;
+	text-align: left;
+	position: relative;
+	font-size: 16px;
+	color: #636363;
+	height: 55px;
+	line-height: 55px;
+}
+.cons_menu li:last-child{
+	text-align: left;
+	border-bottom: none;
+	padding-left: 40px;
+}
+.cons_menu li:last-child a{
+	display: inline-block;
+	width: 222px;
+	height: 40px;
+	line-height: 40px;
+	color: #ed2180;
+	margin-top: 15px;
+	font-size: 16px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+	-webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+	-moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+	-ms-box-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+	-o-box-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+	text-align: center;
+	background: -webkit-linear-gradient(top,#fff,#dcdcdc,#fff);
+	background: -moz-linear-gradient(top,#fff,#dcdcdc,#fff);
+	background: -ms-linear-gradient(top,#fff,#dcdcdc,#fff);
+	background: -o-linear-gradient(top,#fff,#dcdcdc,#fff);
+}
 .traf_cont table{
 	margin-bottom: 30px;
 }
@@ -467,4 +572,19 @@ color: #fff;
 	font-size: 24px;
 	margin:0 20px;
 	white-space: nowrap;
+}
+
+/*==========右侧咨询途径==========*/
+.fixconst_menu{
+	width: 50px;
+	position: fixed;
+	top: 50%;
+	right: 0;
+	margin-top: -135px;
+	z-index: 999999;
+	/*border:1px solid red;*/
+}
+.fixconst_menu li{
+	position: relative;
+	width: 100px;
 }

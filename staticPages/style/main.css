@@ -730,9 +730,21 @@ a {
 .content5_2 .content5_2yp{width:1198px; height:220px; margin:0 auto; overflow:hidden; position:relative;}
 .content5_2 .content5_2yp .bd{width:1098px; margin:0 auto; height:220px;}
 .content5_2 .content5_2yp .bd ul{overflow:hidden;}
-.content5_2 .content5_2yp .bd ul li{ padding-top:35px; /*padding-left:20px;*/margin-left:20px;/* width:280px;*/ float:left;}
+.content5_2 .content5_2yp .bd ul li{ padding-top:35px; /*padding-left:20px;*/margin-left:20px;/* width:280px;*/ float:left; position: relative;}
 .content5_2 .content5_2yp .bd ul li img{
     width: 240px;
+}
+.content5_2 .content5_2yp .bd ul li p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    background: rgba(0,0,0,0.4);
 }
 /*.content5_2 .content5_2yp .bd ul li p{font-size:14px; line-height:30px; text-align:center;}*/
 .content5_2fx{position:absolute; width:30px; height:85px; top:110px;text-align:center; font-size:30px; line-height:85px;color:#FFF; font-weight:bold;}
@@ -1033,7 +1045,6 @@ a {
     background: url(../images/cbg.png) no-repeat center center;
 }
 td .icon{
-   
     height: 35px;
 }
 tr td:last-child .icon{
@@ -1048,4 +1059,66 @@ tr td:last-child .icon{
 }
 .icon-wrong{
     background-position: -198px -222px;
+}
+
+.map_menu .icon,
+.cons_menu .icon{
+    height: 40px;
+    width: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.cons_menu .icon{
+    width: 50px;
+    top: 7px;
+}
+.icon-address{
+    background-position: -333px -4px;
+}
+.icon-telphone{
+    background-position: -333px -51px;
+}
+.icon-phone{
+    background-position: -333px -98px;
+}
+.icon-weixin{
+    background-position: -331px -140px;
+}
+.icon-weibo{
+    background-position: -331px -177px;
+}
+.icon-txwb{
+    background-position: -331px -222px;
+}
+.icon-userwx{
+    background-position: -376px -8px;
+}
+.icon-userphone{
+    background-position: -376px -62px;
+}
+.icon-userqq{
+    background-position: -376px -117px;
+}
+
+/*右侧咨询途径*/
+.fixconst_menu .icon{
+    height: 50px;
+    width: 50px;
+    right: 0;
+}
+.icon-fixmessage{
+    background-position: -377px -167px;
+}
+.icon-fixphone{
+    background-position: -376px -224px;
+}
+.icon-fixqrcode{
+    background-position: -375px -283px;
+}
+.icon-fixqq{
+    background-position: -316px -283px;
+}
+.icon-fixaddress{
+    background-position: -257px -283px;
 }
